@@ -4,17 +4,13 @@
   {%- include head.html -%}
 
   <body>
+    <section class="layout-container">
+      {%- include header.html -%}
+      <main class="main">
+          {{ content }}
+        </main>
 
-    {%- include header.html -%}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
-
-    {%- include footer.html -%}
-
+        {%- include footer.html -%}
+      </section>
   </body>
-
 </html>

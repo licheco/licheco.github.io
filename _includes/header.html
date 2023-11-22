@@ -1,9 +1,22 @@
-<header style="height:100px; width:960px; margin:0 auto; display:flex; align-items: center;">
-  <img src="/img/logo.png" alt="" style="height:30px;">
-  <ul>
-    <li>회사소개</li>
-    <li>조직문화</li>
-    <li>블로그</li>
-    <li>채용</li>
-  </ul>
+<header class="header">
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+
+
+    {%- if titles_size > 0 -%}
+    <div class="container">
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+        <img src="/img/logo.png" alt="" style="height:30px;">
+      </a>
+      <nav>
+        <ul class="list-container">
+          <li><a href="{{ '/culture' | prepend: site.baseurl }}/" >팀 문화</a></li>
+
+          <li>개발</li>
+          <li class="recruitment">채용</li>
+        </ul>
+        </div>
+      </nav>
+    {%- endif -%}
 </header>
