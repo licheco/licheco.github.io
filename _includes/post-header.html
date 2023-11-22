@@ -1,2 +1,18 @@
-<div class="post-header loading-animation" style="background-image: url('{{ page.header-img }}')">
-</div>
+
+<section class="card-detail-header">
+  <div class="container">
+      <h3>{{ page.title }}</h3>
+      <div>
+        <img src="{{ page.header-img }}" class="card-detail-img"/>
+      </div>
+      <p class="card-detail-text">
+        {{ page.date }}
+          <span>
+          {% assign writer = site.data.members | where: 'id', page.writer | first %}
+          {% if writer %}
+            {{ writer.name }}
+          {% endif %}
+        </span>
+      </p>
+    </div>
+</section>

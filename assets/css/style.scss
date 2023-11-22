@@ -40,6 +40,38 @@
     }
   }
 }
+.card-detail-header {
+  margin: 20px auto;
+  width: 100%;
+  .container {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $divider;
+    h3 {
+      display: block;
+      @include title-3(bold);
+    }
+    .card-detail-text {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+      @include body-md(400);
+      color: $gray-70;
+      span {
+        color: $gray-70;
+        @include body-md(400);
+      }
+    }
+    img {
+      width: 117px;
+      height: 117px;
+      border-radius: 50%;
+    }
+  }
+}
 
 @include desktop {
   .main-card {
@@ -60,7 +92,7 @@
           object-fit: contain;
         }
         .card-info {
-          gap: 20px;
+          gap: 4px;
           .card-title {
             @include headline-3();
           }
@@ -71,9 +103,39 @@
           }
           .card-date {
             @include title-4(400);
+            margin-top: 20px;
           }
         }
       }
     }
   }
+  .card-detail-header {
+    margin: 40px 0 30px auto;
+    .container {
+      h3 {
+        margin-top: 40px;
+        align-self: start;
+        @include headline-2();
+        color: $primary-blue;
+        order: 2;
+      }
+      .card-detail-text {
+        align-self: start;
+        gap: 40px;
+        order: 3;
+        color: $primary-blue;
+        @include title-4(400);
+        span {
+          @include title-4(400);
+          color: $primary-blue;
+        }
+      }
+      img {
+        width: 160px;
+        height: 160px;
+        order: 1;
+      }
+    }
+  }
 }
+

@@ -5,6 +5,15 @@
 .main {
   flex: 1 0;
   padding-bottom: 40px;
+  padding-inline: 20px;
+  p {
+    margin: 1em 0;
+    font-size: 1em;
+    line-height: 1.8;
+  }
+  .container {
+    display: block;
+  }
 }
 .container {
   display: flex;
@@ -29,7 +38,7 @@
   padding-inline: 20px;
   border-bottom:1px solid $divider;
   a {
-    color: $yellow-90;
+    color: $primary-blue;
   }
   .container {
     .list-container {
@@ -52,12 +61,12 @@
           border-bottom-width: 1px;
           border-top-style: solid;
           border-bottom-style: solid;
-          border-top-color: rgba(229,109,12,1);
-          border-bottom-color: rgba(229,109,12,1);
+          border-top-color: $primary-blue;
+          border-bottom-color: $primary-blue;
           transform: scale(0.1, 1);
         }
         &:hover{
-          color: $yellow-90;
+          color: $primary-blue;
         };
         &:hover::before {
           opacity: 1;
@@ -73,7 +82,7 @@
           height: 100%;
           z-index: -1;
           transition: all 0.3s;
-          background: rgba(229,109,12,1);
+          background: $primary-blue;
         }
         &:hover::after {
           opacity: 0;
@@ -82,7 +91,7 @@
       }
       li {
         padding: 4px 4px;
-        color: $yellow-90;
+        color: $primary-blue;
         @include title-xs(bold);
         cursor: pointer;
       }
@@ -94,7 +103,7 @@ footer {
   align-items: center;
   padding-inline: 20px;
   min-height: 82px;
-  background: $yellow-100;
+  background: $primary-blue;
   .container {
     flex-direction: column;
     align-items: flex-start;
@@ -111,6 +120,7 @@ footer {
 }
 
 
+
 @include desktop {
   .container {
     width: 960px;
@@ -125,7 +135,7 @@ footer {
         }
         li {
           padding: 4px 8px;
-          color: $yellow-90;
+          color: $primary-blue;
           @include title-md(bold);
           cursor: pointer;
         }
@@ -148,5 +158,5 @@ footer {
       height: 30px;
     }
   }
-}
 
+}

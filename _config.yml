@@ -6,6 +6,8 @@ url: "https://github.com/licheco/licheco.github.io"
 github_username: "licheco"
 
 markdown: kramdown
+highlighter: rouge
+
 # Build settings
 theme: minima
 plugins:

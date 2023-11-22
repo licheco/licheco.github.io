@@ -6,8 +6,13 @@
   <body>
     <section class="layout-container">
       {%- include header.html -%}
+      {% if page.post-header == true %}
+        {% include post-header.html %}
+      {% endif %}
       <main class="main">
-          {{ content }}
+        <div class="container">
+            {{ content }}
+          </div>
         </main>
 
         {%- include footer.html -%}
