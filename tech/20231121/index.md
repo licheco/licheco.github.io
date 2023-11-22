@@ -1,8 +1,13 @@
 ---
-layout: post
-title:  "First Post"
-date:   2023-11-21 18:17:03 +0900
-categories: post
+layout: tech
+type: tech
+date: "20231121"
+category: story
+title: 블로그를 써보자!타이틀
+subtitle:  기존 쉘 스크립트의 빠른 성능과 자바스크립트의 편의성을 모두 가지고 있는 zx 라이브러리를 소개합니다.
+writer: 951215
+post-header: true
+header-img: /img/1.png
 ---
 이 포스트는 _posts 폴더에서 찾을 수 있다.
 

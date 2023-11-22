@@ -1,13 +1,16 @@
+@import 'typography';
+@import 'colors';
+@import 'variables';
+
 .main {
   flex: 1 0;
-  padding-block: 40px;
+  padding-bottom: 40px;
 }
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  width: 960px;
   height: 100%;
 }
 .list-container {
@@ -22,7 +25,8 @@
   min-height: 100vh;
 }
 .header {
-  height: 100px;
+  height: 80px;
+  padding-inline: 20px;
   border-bottom:1px solid $divider;
   a {
     color: $yellow-90;
@@ -77,9 +81,9 @@
         }
       }
       li {
-        padding: 4px 8px;
+        padding: 4px 4px;
         color: $yellow-90;
-        @include title-md(bold);
+        @include title-xs(bold);
         cursor: pointer;
       }
     }
@@ -88,12 +92,61 @@
 footer {
   display: flex;
   align-items: center;
-  min-height: 140px;
+  padding-inline: 20px;
+  min-height: 82px;
   background: $yellow-100;
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin: inherit;
+  }
   p {
     color: $primary-white;
+    @include label();
   }
   img {
-    height: 30px;
+    height: 18px;
   }
 }
+
+
+@include desktop {
+  .container {
+    width: 960px;
+  }
+  .header {
+    padding-inline: 0;
+    height: 100px;
+    .container {
+      .list-container {
+        .recruitment {
+          padding-inline: 16px;
+        }
+        li {
+          padding: 4px 8px;
+          color: $yellow-90;
+          @include title-md(bold);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  footer {
+    min-height: 140px;
+    padding-inline: 0;
+    .container {
+      flex-direction: row;
+      align-items: center;
+      gap: 0;
+      margin: 0 auto;
+    }
+    p {
+      @include body-lg();
+    }
+    img {
+      height: 30px;
+    }
+  }
+}
+

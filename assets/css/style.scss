@@ -3,7 +3,77 @@
 ---
 
 @import "base";
-@import "typography";
 @import "colors";
 @import "layout";
+@import "typography";
+@import "variables";
 
+.main-card {
+  width: 100%;
+  ul {
+    padding-inline: 20px;
+    .card {
+      padding-block: 20px;
+      min-height: 140px;
+      border-bottom: 1px solid $divider;
+      overflow: hidden;
+      .card-img {
+        display: none;
+      }
+      .card-info {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        .card-title {
+          @include title-sm(bold);
+        }
+        .card-sub {
+          @include body-2(400);
+          white-space: pre-line;
+        }
+        .card-date {
+          display: flex;
+          gap: 20px;
+          @include body-2(400);
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .main-card {
+    ul {
+      padding-inline: 0;
+      .card {
+        margin: 0;
+        padding: 50px;
+        min-height: 160px;
+        a {
+          display: flex;
+          justify-content: space-between;
+        }
+        .card-img {
+          display: block;
+          height: 160px;
+          border-radius: 50%;
+          object-fit: contain;
+        }
+        .card-info {
+          gap: 20px;
+          .card-title {
+            @include headline-3();
+          }
+          .card-sub {
+              @include title-4(400);
+              line-height: 1.8;
+              max-width: 620px;
+          }
+          .card-date {
+            @include title-4(400);
+          }
+        }
+      }
+    }
+  }
+}

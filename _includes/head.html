@@ -1,10 +1,20 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {%- seo -%}
-    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.ico">
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- HTML Meta Tags -->
+  <title>{% if page.home == true %}{{ site.title }}{% elsif page.main == true %}{{ page.title }} | {{ site.title }}{% else %}{{ page.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.home == true %}{{ site.description }}{% else %}{{ site.title }}{% endif %}">
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="{% if page.home == true %}{{ site.title }}{% elsif page.main == true %}{{ page.title }} | {{ site.title }}{% else %}{{ page.title }}{% endif %}">
+  <meta itemprop="description" content="{% if page.home == true %}{{ site.description }}{% else %}{{ site:title }}{% endif %}">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles.css">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+
+  <!-- Script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 </head>
+

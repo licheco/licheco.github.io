@@ -4,12 +4,13 @@ layout: base
 
 <section>
   <div class="container">
-    <ul>
-      {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+      <div class="main-card">
+        <ul>
+          {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'tech' %}
+          {% for page in sorted limit:3 %}
+          {% include post-card.html %}
+          {% endfor %}
+        </ul>
+      </div>
   </div>
 </section>

@@ -1,0 +1,14 @@
+# [[ 작성방법 ]]
+# 생년월일로 id를 작성해주세요
+
+## id: 사번
+## name: 닉네임
+## emoji: 이모지
+## comment: 한줄설명
+
+
+- id: 951215
+  emoji: 😎
+  name: 멀미연
+  comment: Hello World!
+
