@@ -1,7 +1,7 @@
 title: "liche Team Blog"
 email: "official@liche.co.kr"
 description: "Blog of liche Team"
-baseurl: "" 
+baseurl: ""
 url: "http://localhost:4000"
 # url: "https://github.com/licheco/licheco.github.io"
 github_username: "licheco"
@@ -11,7 +11,11 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 exclude:
   - Gemfile
   - Gemfile.lock
+
+sass:
+  sass_dir: _sass

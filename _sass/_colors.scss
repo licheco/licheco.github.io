@@ -1,0 +1,126 @@
+// Elevation Colors
+// Gray
+$gray-10: #ffffff;
+$gray-20: #f6f6f6;
+$gray-30: #e8e8e8;
+$gray-40: #e1e1e1;
+$gray-50: #bebebe;
+$gray-60: #8e8e8e;
+$gray-70: #646464;
+$gray-80: #3c3c3c;
+$gray-90: #1e1e1e;
+$gray-100: #000000;
+$gray: $gray-70;
+
+// Red
+$red-10: #feecee;
+$red-20: #fcd0d3;
+$red-30: #f1aba9;
+$red-40: #e98380;
+$red-50: #e95f55;
+$red-60: #ed523d;
+$red-70: #df4a3c;
+$red-80: #cd4036;
+$red-90: #c03a2f;
+$red-100: #b03225;
+$red: $red-70;
+
+// Yellow
+$yellow-10: #fcf7e1;
+$yellow-20: #f8e9b3;
+$yellow-30: #f3da83;
+$yellow-40: #efcd53;
+$yellow-50: #ecc132;
+$yellow-60: #e9b71f;
+$yellow-70: #e9ac19;
+$yellow-80: #e89915;
+$yellow-90: #e78911;
+$yellow-100: #e56d0c;
+$yellow: $yellow-60;
+
+// Blue
+$blue-10: #e4f1f8;
+$blue-20: #bcdcee;
+$blue-30: #94c7e4;
+$blue-40: #70b1d8;
+$blue-50: #55a1d2;
+$blue-60: #3e93cb;
+$blue-70: #3486bf;
+$blue-80: #2974ae;
+$blue-90: #21649c;
+$blue-100: #13487d;
+$blue: $blue-70;
+
+// Green
+$green-10: #e8f6ea;
+$green-20: #c7e7cb;
+$green-30: #a4d8ab;
+$green-40: #7eca89;
+$green-50: #62bf71;
+$green-60: #46b358;
+$green-70: #3da44e;
+$green-80: #329243;
+$green-90: #298138;
+$green-100: #166126;
+$green: $green-70;
+
+// Primary Colors
+$primary-black: #000000;
+$primary-white: #ffffff;
+
+// Background
+$dark-background: $gray-80;
+$medium-background: $gray-40;
+$light-background: $gray-20;
+
+// Border and Divider
+$divider: $gray-30;
+$border: $gray-40;
+$divider-inverese: $gray-70;
+
+// Text & Icon
+$text-primary: $gray-100;
+$text-secondary: $gray-60;
+$text-disabled: $gray-50;
+$text-high-emphasis: $text-primary;
+$text-medium-emphasis: $text-secondary;
+$text-low-emphasis: $text-disabled;
+
+// Alert & Error Message
+$alert-primary: $red-70;
+$alert-secondary: $red-30;
+$alert-third: $red-10;
+$alert-defult: $alert-primary;
+$alert-border: $alert-secondary;
+$alert-background: $alert-third;
+
+// Warning Message
+$warning-primary: $yellow-60;
+$warning-secondary: $yellow-30;
+$warning-third: $yellow-10;
+$warning-defult: $warning-primary;
+$warning-border: $warning-secondary;
+$warining-background: $warning-third;
+
+// Success Message
+$success-primary: $green-70;
+$success-secondary: $green-30;
+$success-third: $green-10;
+$success-defult: $success-primary;
+$success-border: $success-secondary;
+$success-background: $success-third;
+
+// Information Message
+$information-primary: $blue-70;
+$information-secondary: $blue-30;
+$information-third: $blue-10;
+$information-defult: $information-primary;
+$informaition-border: $information-secondary;
+$informaition-background: $information-third;
+
+// System
+$page-dim-layer: rgba(0, 0, 0, 0.4);
+$hovered-and-press: rgba(0, 0, 0, 0.05);
+$hovered-and-press-inverse: rgba(255, 255, 255, 0.3);
+$pagination-off-black: rgba(0, 0, 0, 0.2);
+$pagination-off-white: rgba(255, 255, 255, 0.2);
