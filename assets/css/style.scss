@@ -34,6 +34,7 @@
         .card-date {
           display: flex;
           gap: 20px;
+          margin-bottom: 0;
           color: $gray-60;
           @include body-2(400);
           span {
@@ -109,6 +110,7 @@
         .card-info {
           gap: 4px;
           max-width: 620px;
+          color: $primary-black;
           .card-title {
             @include headline-3();
           }
@@ -119,6 +121,7 @@
           .card-date {
             @include title-4(400);
             margin-top: 20px;
+            margin-bottom: 0;
           }
         }
       }

@@ -4,9 +4,13 @@ description: "Blog of liche Team"
 baseurl: ""
 url: "https://github.com/licheco/licheco.github.io"
 github_username: "licheco"
+lang: "ko_KR"
+timezone: "Asia/Seoul"
 
 markdown: kramdown
-highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # Build settings
 theme: minima
