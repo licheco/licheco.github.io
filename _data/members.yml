@@ -5,6 +5,21 @@
 ## comment: 한줄설명
 ## img: 본인이미지의 경로
 
+- key: 0323
+  name: 개발팀
+  comment:
+  img: /assets/img/bbang.png
+
+- key: 1223
+  name: 박세환
+  comment:
+  img:
+
+- key: 1222
+  name: 조영완
+  comment:
+  img:
+
 - key: 1215
   name: 멀미연
   comment: Hello World!

@@ -12,6 +12,7 @@
   width: 100%;
   ul {
     padding-inline: 20px;
+    list-style: none;
     .card {
       padding-block: 20px;
       min-height: 140px;
@@ -23,6 +24,7 @@
       .card-info {
         display: flex;
         flex-direction: column;
+        color: $primary-black;
         gap: 12px;
         .card-title {
           @include title-sm(bold);
@@ -76,7 +78,8 @@
         color: $gray-60;
         @include body-md(400);
         span {
-          @include body-lg(500);
+          color: $primary-black;
+          @include body-lg(bold);
         }
       }
     }
@@ -110,7 +113,6 @@
         .card-info {
           gap: 4px;
           max-width: 620px;
-          color: $primary-black;
           .card-title {
             @include headline-3();
           }
@@ -138,7 +140,7 @@
       .member-info-container {
         .card-detail-text {
           span {
-            @include title-4(400);
+            @include title-4(bold);
           }
         }
       }

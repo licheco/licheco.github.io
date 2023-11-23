@@ -14,6 +14,9 @@
   line-height: 22px;
   font-weight: 500;
 }
+ul {
+  list-style: inside;
+}
 .highlight .err {
   color: #272822;
   background-color: #f92672;
@@ -115,4 +118,16 @@
 }
 .highlight .ss {
   color: #a6e22e;
+}
+ul,
+ol {
+  font-size: 17px;
+  letter-spacing: 0em;
+  line-height: 1.6;
+  font-weight: normal;
+  margin: 24px 0px 8px;
+}
+.md-img {
+  width: 100%;
+  object-fit: contain;
 }
