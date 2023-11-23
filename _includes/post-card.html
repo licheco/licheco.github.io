@@ -12,8 +12,10 @@
       </p>
     </div>
     <div class="img-wrap">
-      <img src="tech/{{ page.date | remove:"-"}}/{{ page.header-img }}"
-      class="card-img" />
+      {% assign writer = site.data.members | where: 'key', page.writer | first
+      %} {% if writer %}
+      <img src="{{ writer.img }}" class="card-img" />
+      {% endif %}
     </div>
   </a>
 </li>

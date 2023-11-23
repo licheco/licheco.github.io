@@ -34,7 +34,11 @@
         .card-date {
           display: flex;
           gap: 20px;
+          color: $gray-60;
           @include body-2(400);
+          span {
+            color: $gray-60;
+          }
         }
       }
     }
@@ -42,33 +46,42 @@
 }
 .card-detail-header {
   margin: 20px auto;
-  width: 100%;
+  padding-inline: 20px;
   .container {
     display: flex;
-    gap: 8px;
+    gap: 20px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding-bottom: 20px;
     border-bottom: 1px solid $divider;
     h3 {
       display: block;
-      @include title-3(bold);
+      color: $primary-blue;
+      @include title-1(bold);
     }
-    .card-detail-text {
+    .member-info-container {
       display: flex;
-      gap: 12px;
-      margin-top: 20px;
-      @include body-md(400);
-      color: $gray-70;
-      span {
-        color: $gray-70;
+      align-items: center;
+      gap: 16px;
+      .detail-member-image {
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+        border-radius: 50%;
+      }
+      .card-detail-text {
+        display: flex;
+        flex-direction: column;
+        color: $gray-60;
         @include body-md(400);
+        span {
+          @include body-lg(500);
+        }
       }
     }
     img {
-      width: 117px;
-      height: 117px;
-      border-radius: 50%;
+      width: 100%;
+      border-radius: 8px;
       object-fit: contain;
     }
   }
@@ -112,31 +125,22 @@
     }
   }
   .card-detail-header {
+    padding-inline: 0;
     margin: 40px 0 30px auto;
+    width: 100%;
     .container {
       h3 {
-        margin-top: 40px;
-        align-self: start;
         @include headline-2();
-        color: $primary-blue;
-        order: 2;
       }
-      .card-detail-text {
-        align-self: start;
-        gap: 40px;
-        order: 3;
-        color: $primary-blue;
-        @include title-4(400);
-        span {
-          @include title-4(400);
-          color: $primary-blue;
+      .member-info-container {
+        .card-detail-text {
+          span {
+            @include title-4(400);
+          }
         }
       }
       img {
-        width: 160px;
-        height: 160px;
-        order: 1;
-        object-fit: contain;
+        height: auto;
       }
     }
   }
