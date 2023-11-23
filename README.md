@@ -6,9 +6,19 @@
 
 1. [루비 공식 다운로드](https://rubyinstaller.org/downloads/)
 
-### gem v_3.0.0, rbenv v_2.7.7 이상
+### 로컬에 블로그 실행
 
-Mac M1칩일 경우
+```shell
+$ gem install jekyll
+# 프로젝트 경로로 이동
+$ cd licheco.github.io
+# 패키지 설치
+$ bundle install
+# 서버 실행
+$ bundle exec jekyll serve
+```
+
+jekyll 설치가 안되고 Apple Silicon일 경우
 
 ```shell
 $ rbenv install 3.1.2
@@ -17,21 +27,8 @@ $ rbenv local 3.1.2
 $ sudo gem install jekyll
 ```
 
-### 로컬에 블로그 실행
-
-터미널에서 프로젝트 경로로 이동한 뒤 하기 명령어들을 실행하여 로컬에 블로그를 띄워줍니다.
-
-```shell
-# 프로젝트 경로로 이동
-$ cd licheco.github.io
-# 패키지 설치
-$ bundle install
-# 블로그 서버 실행
-$ jekyll serve 안되면 $bundle exec jekyll serve
-```
-
 [http://127.0.0.1:4000/](http://127.0.0.1:4000/)로 접속 시 로컬에서 블로그가 실행되는 것을 볼 수 있습니다.
 
-`jekyll serve` 명령어로 블로그를 실행할 수 있습니다.
+`jekyll serve` 명령어로도 블로그를 실행할 수 있습니다.
 
 ---
