@@ -69,6 +69,7 @@
       width: 117px;
       height: 117px;
       border-radius: 50%;
+      object-fit: contain;
     }
   }
 }
@@ -87,19 +88,20 @@
         }
         .card-img {
           display: block;
+          width: 160px;
           height: 160px;
           border-radius: 50%;
           object-fit: contain;
         }
         .card-info {
           gap: 4px;
+          max-width: 620px;
           .card-title {
             @include headline-3();
           }
           .card-sub {
-              @include title-4(400);
-              line-height: 1.8;
-              max-width: 620px;
+            @include title-4(400);
+            line-height: 1.8;
           }
           .card-date {
             @include title-4(400);
@@ -134,8 +136,8 @@
         width: 160px;
         height: 160px;
         order: 1;
+        object-fit: contain;
       }
     }
   }
 }
-

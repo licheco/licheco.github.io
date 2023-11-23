@@ -4,13 +4,12 @@ layout: base
 
 <section>
   <div class="container">
-      <div class="main-card">
-        <ul>
-          {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'tech' %}
-          {% for page in sorted limit:3 %}
-          {% include post-card.html %}
-          {% endfor %}
-        </ul>
-      </div>
+    <div class="main-card">
+      <ul>
+        {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type',
+        'tech' %} {% for page in sorted limit:5 %} {% include post-card.html %}
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </section>

@@ -1,6 +1,6 @@
-@import 'typography';
-@import 'colors';
-@import 'variables';
+@import "typography";
+@import "colors";
+@import "variables";
 
 .main {
   flex: 1 0;
@@ -36,7 +36,7 @@
 .header {
   height: 80px;
   padding-inline: 20px;
-  border-bottom:1px solid $divider;
+  border-bottom: 1px solid $divider;
   a {
     color: $primary-blue;
   }
@@ -48,7 +48,7 @@
         transition: all 0.3s;
         position: relative;
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           bottom: 0;
           left: 0;
@@ -65,15 +65,15 @@
           border-bottom-color: $primary-blue;
           transform: scale(0.1, 1);
         }
-        &:hover{
+        &:hover {
           color: $primary-blue;
-        };
+        }
         &:hover::before {
           opacity: 1;
           transform: scale(1, 1);
         }
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           bottom: 0;
           left: 0;
@@ -116,10 +116,9 @@ footer {
   }
   img {
     height: 18px;
+    object-fit: contain;
   }
 }
-
-
 
 @include desktop {
   .container {
@@ -155,8 +154,8 @@ footer {
       @include body-lg();
     }
     img {
+      object-fit: contain;
       height: 30px;
     }
   }
-
 }

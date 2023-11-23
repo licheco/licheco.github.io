@@ -1,148 +1,147 @@
-
 $regular-weight: 400;
 
 // Typography Mixin
 @mixin typography($weight, $size, $line-height, $letter-spacing) {
-    font-weight: $weight;
-    font-size: $size;
-    line-height: $line-height;
-    letter-spacing: $letter-spacing;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
 }
 
 // Headline 1
 @mixin headline-1 {
-    @include typography(bold, 50px, 60px, 0);
+  @include typography(bold, 50px, 60px, 0);
 }
 
 // Headline 2
 @mixin headline-2 {
-    @include typography(bold, 40px, 48px, 0);
+  @include typography(bold, 40px, 48px, 0);
 }
 
 // Headline 3
 @mixin headline-3 {
-    @include typography(bold, 30px, 36px, 0);
+  @include typography(bold, 30px, 36px, 0);
 }
 
 // Title 1
 @mixin title-1($weight) {
-    @include typography($weight, 26px, 36px, 0);
+  @include typography($weight, 26px, 36px, 0);
 }
 
 // Title 2
 @mixin title-2($weight) {
-    @include typography($weight, 23px, 32px, 0);
+  @include typography($weight, 23px, 32px, 0);
 }
 
 // Title 3
 @mixin title-3($weight) {
-    @include typography($weight, 20px, 28px, 0);
+  @include typography($weight, 20px, 28px, 0);
 }
 
 // Title 4
 @mixin title-4($weight) {
-    @include typography($weight, 17px, 24px, 0);
+  @include typography($weight, 17px, 24px, 0);
 }
 
 // Body 1
 @mixin body-1($weight) {
-    @include typography($weight, 16px, 26px, 0);
+  @include typography($weight, 16px, 26px, 0);
 }
 
 // Body 2
 @mixin body-2($weight) {
-    @include typography($weight, 14px, 22px, 0);
+  @include typography($weight, 14px, 22px, 0);
 }
 
 // Body 3
 @mixin body-3($weight) {
-    @include typography($weight, 13px, 22px, 0);
+  @include typography($weight, 13px, 22px, 0);
 }
 
 // Body 4
 @mixin body-4($weight) {
-    @include typography($weight, 12px, 20px, 0);
+  @include typography($weight, 12px, 20px, 0);
 }
 
 // Caption
 @mixin caption($weight: $regular-weight) {
-    @include typography($weight, 11px, 18px, 0);
+  @include typography($weight, 11px, 18px, 0);
 }
 
 // Label
 @mixin label($weight: $regular-weight) {
-    @include typography($weight, 10px, 16px, 0);
+  @include typography($weight, 10px, 16px, 0);
 }
 
 // Button 1
 @mixin button-1($weight) {
-    @include typography($weight, 19px, 30px, 0);
+  @include typography($weight, 19px, 30px, 0);
 }
 
 // Button 2
 @mixin button-2($weight) {
-    @include typography($weight, 16px, 26px, 0);
+  @include typography($weight, 16px, 26px, 0);
 }
 
 // Button 3
 @mixin button-3($weight) {
-    @include typography($weight, 14px, 22px, 0);
+  @include typography($weight, 14px, 22px, 0);
 }
 
 // Button 4
 @mixin button-4($weight) {
-    @include typography($weight, 12px, 20px, 0);
+  @include typography($weight, 12px, 20px, 0);
 }
 
 // headline
 @mixin h1 {
-    @include headline-1();
+  @include headline-1();
 }
 @mixin h2 {
-    @include headline-2();
+  @include headline-2();
 }
 @mixin h3 {
-    @include headline-3();
+  @include headline-3();
 }
 
 // title
 @mixin title-lg($weight: $regular-weight) {
-    @include title-1($weight);
+  @include title-1($weight);
 }
 @mixin title-md($weight: $regular-weight) {
-    @include title-2($weight);
+  @include title-2($weight);
 }
 @mixin title-sm($weight: $regular-weight) {
-    @include title-3($weight);
+  @include title-3($weight);
 }
 @mixin title-xs($weight: $regular-weight) {
-    @include title-4($weight);
+  @include title-4($weight);
 }
 
 // body
 @mixin body-lg($weight: $regular-weight) {
-    @include body-1($weight);
+  @include body-1($weight);
 }
 @mixin body-md($weight: $regular-weight) {
-    @include body-2($weight);
+  @include body-2($weight);
 }
 @mixin body-sm($weight: $regular-weight) {
-    @include body-3($weight);
+  @include body-3($weight);
 }
 @mixin body-xs($weight: $regular-weight) {
-    @include body-4($weight);
+  @include body-4($weight);
 }
 
 // button
 @mixin button-lg($weight: $regular-weight) {
-    @include button-1($weight);
+  @include button-1($weight);
 }
 @mixin button-md($weight: $regular-weight) {
-    @include button-2($weight);
+  @include button-2($weight);
 }
 @mixin button-sm($weight: $regular-weight) {
-    @include button-3($weight);
+  @include button-3($weight);
 }
 @mixin button-xs($weight: $regular-weight) {
-    @include button-4($weight);
+  @include button-4($weight);
 }

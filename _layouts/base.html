@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
   {%- include head.html -%}
-
   <body>
     <section class="layout-container">
-      {%- include header.html -%}
       {% if page.post-header == true %}
-        {% include post-header.html %}
+          {% include post-header.html %}
       {% endif %}
       <main class="main">
         <div class="container">

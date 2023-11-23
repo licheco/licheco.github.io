@@ -3,20 +3,18 @@
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 
-
     {%- if titles_size > 0 -%}
     <div class="container">
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
-        <img src="/img/logo.png" alt="" style="height:30px;">
+        <img src="/assets/img/logo.png" alt="" style="height:30px;">
       </a>
       <nav>
         <ul class="list-container">
           <li><a href="{{ '/culture' | prepend: site.baseurl }}/" >팀 문화</a></li>
-
           <li>개발</li>
           <li class="recruitment">채용</li>
         </ul>
-        </div>
+      </div>
       </nav>
     {%- endif -%}
 </header>

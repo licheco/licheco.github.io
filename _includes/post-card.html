@@ -1,24 +1,19 @@
 <li class="card">
-  <a href="{{ page.url | prepend: site.baseurl }}" >
+  <a href="{{ page.url | prepend: site.baseurl }}">
     <div class="card-info transition">
-      <h3 class="card-title">
-        {{ page.title }}
-      </h3>
-      <p class="card-sub">
-        {{ page.subtitle }}
-      </p>
+      <h3 class="card-title">{{ page.title }}</h3>
+      <p class="card-sub">{{ page.subtitle }}</p>
       <p class="card-date">
         {{ page.date }}
-          <span>
-          {% assign writer = site.data.members | where: 'id', page.writer | first %}
-          {% if writer %}
-            {{ writer.name }}
-          {% endif %}
+        <span>
+          {% assign writer = site.data.members | where: 'key', page.writer |
+          first %} {% if writer %} {{ writer.name }} {% endif %}
         </span>
       </p>
     </div>
     <div class="img-wrap">
-      <img src="tech/{{ page.date }}/{{ page.header-img }}" class="card-img"/>
+      <img src="tech/{{ page.date | remove:"-"}}/{{ page.header-img }}"
+      class="card-img" />
     </div>
   </a>
 </li>

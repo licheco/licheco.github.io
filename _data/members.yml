@@ -1,14 +1,11 @@
 # [[ 작성방법 ]]
-# 생년월일로 id를 작성해주세요
 
-## id: 사번
+## key: 생일
 ## name: 닉네임
-## emoji: 이모지
 ## comment: 한줄설명
+## img: 본인이미지의 경로
 
-
-- id: 951215
-  emoji: 😎
+- key: 1215
   name: 멀미연
   comment: Hello World!
-
+  img: /assets/img/members/smyn.png
