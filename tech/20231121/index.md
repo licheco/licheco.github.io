@@ -5,9 +5,9 @@ date: 2023-11-21
 category: culture
 title: 리체 개발팀의 문화
 subtitle: 개발팀 문화에는 여러 가지가 있지만 리체 개발팀의 특색있는 문화를 소개합니다!
-writer: 0323
+member: 323
 post-header: true
-header-img: /assets/img/liche.gif
+header-img: /assets/img/liche.png
 ---
 
 # 코드 리뷰 당번제 도입기

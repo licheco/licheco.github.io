@@ -5,22 +5,57 @@
 ## comment: 한줄설명
 ## img: 본인이미지의 경로
 
-- key: 0323
+- key: 323
   name: 개발팀
   comment:
   img: /assets/img/bbang.png
 
 - key: 1223
-  name: 박세환
+  name: gomse
   comment:
-  img:
+  img: /assets/img/members/gomse.png
+
+- key: 815
+  name: 이동관
+  comment:
+  img: /assets/img/members/idk.png
+
+- key: 624
+  name: 윤상철
+  comment:
+  img: /assets/img/members/ysc.png
 
 - key: 1222
   name: 조영완
+  comment: 주4일제 도입되었으면 좋겠다.
+  img: /assets/img/members/119.png
+
+- key: 212
+  name: 김현준
   comment:
-  img:
+  img: /assets/img/members/khj.png
 
 - key: 1215
   name: 멀미연
-  comment: Hello World!
+  comment:
   img: /assets/img/members/smyn.png
+
+- key: 807
+  name: 김수민
+  comment:
+  img: /assets/img/members/soom.png
+
+- key: 110
+  name: 장예진
+  comment:
+  img: /assets/img/members/jyj.png
+
+- key: 1203
+  name: 김광권
+  comment:
+  img: /assets/img/members/kkk.png
+
+- key: 817
+  name: 김선진
+  comment:
+  img: /assets/img/members/ksj.png

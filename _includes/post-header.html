@@ -1,18 +1,18 @@
 <section class="card-detail-header">
   <div class="container">
     <div>
-      {% assign writer = site.data.members | where: 'key', page.writer | first
-      %} {% if writer %}
+      {% assign member = site.data.members | where: 'key', page.member | first
+      %} {% if member %}
       <img src="{{ page.header-img }}" />
       {% endif %}
     </div>
     <h3>{{ page.title }}</h3>
     <div class="member-info-container">
-      <img src="{{ writer.img }}" alt="" class="detail-member-image" />
+      <img src="{{ member.img }}" alt="" class="detail-member-image" />
       <p class="card-detail-text">
         <span>
-          {% assign writer = site.data.members | where: 'key', page.writer |
-          first %} {% if writer %} {{ writer.name }} {% endif %}
+          {% assign member = site.data.members | where: 'key', page.member |
+          first %} {% if member %} {{ member.name }} {% endif %}
         </span>
         {{ page.date }}
       </p>

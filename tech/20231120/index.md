@@ -1,11 +1,11 @@
 ---
 layout: default
 type: tech
-date: 2023-11-22
+date: 2023-11-29
 category: story
-title: 네 바로 이곳이 타이틀이 될 공간입니다만2
+title: 네 바로 이곳이 타이틀이 될 공간입니다만
 subtitle: 네 바로 이곳은 서브 타이틀의 공간입니다 기이이이이일게 써도 되지요 근데 굳이 길게 쓸 필요가 있을까여?
-member: 1223
+member: 212
 post-header: true
 header-img: /assets/img/liche.png
 ---

@@ -1,3 +1,5 @@
+{% assign member = site.data.members | where: 'key', page.member | first %}
+
 <li class="card">
   <a href="{{ page.url | prepend: site.baseurl }}">
     <div class="card-info transition">
@@ -6,9 +8,8 @@
       <p class="card-date">{{ page.date }}</p>
     </div>
     <div class="img-wrap">
-      {% assign writer = site.data.members | where: 'key', page.writer | first
-      %} {% if writer %}
-      <img src="{{ writer.img }}" class="card-img" />
+      {% if member %}
+      <img src="{{ member.img }}" class="card-img" />
       {% endif %}
     </div>
   </a>
