@@ -3,8 +3,8 @@ layout: default
 type: tech
 date: 2023-11-28
 category: story
-title: 네 바로 이곳이 타이틀이 될 공간입니다만8
-subtitle: 네 바로 이곳은 서브 타이틀의 공간입니다 기이이이이일게 써도 되지요 근데 굳이 길게 쓸 필요가 있을까여?
+title: JS innerHTML
+subtitle: 텍스트로 만든 HTML을 body에 innerHTML로 추가하자, input 데이터와 script가 모조리 날아갔다!
 member: 110
 post-header: true
 header-img: /assets/img/liche.png

@@ -1,10 +1,10 @@
 ---
 layout: default
 type: tech
-date: 2023-11-29
+date: 2023-11-30
 category: story
-title: 네 바로 이곳이 타이틀이 될 공간입니다만10
-subtitle: 네 바로 이곳은 서브 타이틀의 공간입니다 기이이이이일게 써도 되지요 근데 굳이 길게 쓸 필요가 있을까여?
+title: serverless란?
+subtitle: serverless에 대해서 알아보고, serverless를 도입하는 것이 좋은 선택인지 알아보자.
 member: 817
 post-header: true
 header-img: /assets/img/liche.png

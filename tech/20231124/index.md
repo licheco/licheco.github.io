@@ -3,8 +3,8 @@ layout: default
 type: tech
 date: 2023-11-24
 category: story
-title: 네 바로 이곳이 타이틀이 될 공간입니다만4
-subtitle: 네 바로 이곳은 서브 타이틀의 공간입니다 기이이이이일게 써도 되지요 근데 굳이 길게 쓸 필요가 있을까여?
+title: jest로 로그인 폼 테스트 코드 짜기
+subtitle: Enzyme 를 사용하지 않은 이유는 testing-library/react 가 실제 환경에서 돌아가는 테스트를 할 수 있어서 사용하지 않았다.
 member: 624
 post-header: true
 header-img: /assets/img/liche.png

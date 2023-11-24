@@ -3,8 +3,8 @@ layout: default
 type: tech
 date: 2023-11-29
 category: story
-title: 네 바로 이곳이 타이틀이 될 공간입니다만9
-subtitle: 네 바로 이곳은 서브 타이틀의 공간입니다 기이이이이일게 써도 되지요 근데 굳이 길게 쓸 필요가 있을까여?
+title: Typescript에서 API에 대한 타입선언
+subtitle: 프론트를 개발하면 필수적으로 백엔드와 API를 통해 데이터를 주고받는데, 이때 get이나 post 등 어떤 메소드를 써도 백엔드에 보내는 request, 받을때 response에 대한 타입을 선언해야합니다.
 member: 1203
 post-header: true
 header-img: /assets/img/liche.png

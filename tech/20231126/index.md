@@ -3,8 +3,8 @@ layout: default
 type: tech
 date: 2023-11-26
 category: story
-title: 네 바로 이곳이 타이틀이 될 공간입니다만6
-subtitle: 네 바로 이곳은 서브 타이틀의 공간입니다 기이이이이일게 써도 되지요 근데 굳이 길게 쓸 필요가 있을까여?
+title: 맥에서 터미널로 MySql 접속을 쉽게하자
+subtitle: 가끔씩 터미널로 테이블 생성 명령어를 쓰는데 mysql 접속하는 명령어 치는 시간이 아깝고 모르면 찾아보게 되더라구요
 member: 1215
 post-header: true
 header-img: /assets/img/liche.png

@@ -3,8 +3,8 @@ layout: default
 type: tech
 date: 2023-11-25
 category: story
-title: 네 바로 이곳이 타이틀이 될 공간입니다만5
-subtitle: 네 바로 이곳은 서브 타이틀의 공간입니다 기이이이이일게 써도 되지요 근데 굳이 길게 쓸 필요가 있을까여?
+title: E2E cypress 테스트 코드 짜기
+subtitle: cypress를 이용하여 login test코드를 짜보았다.
 member: 1222
 post-header: true
 header-img: /assets/img/liche.png

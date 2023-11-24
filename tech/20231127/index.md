@@ -3,8 +3,8 @@ layout: default
 type: tech
 date: 2023-11-27
 category: story
-title: 네 바로 이곳이 타이틀이 될 공간입니다만7
-subtitle: 네 바로 이곳은 서브 타이틀의 공간입니다 기이이이이일게 써도 되지요 근데 굳이 길게 쓸 필요가 있을까여?
+title: 구글 오늘 뭐먹지 챗봇 만들기
+subtitle: response에 따라서 다시 메세지를 구현하는 것으로 작업했으나 굳이 오늘 뭐먹지? 카드와 메뉴 추천 카드를 분리 시킬 필요는 없어 보여서 수정이 필요함.
 member: 807
 post-header: true
 header-img: /assets/img/liche.png

@@ -35,9 +35,13 @@
   min-height: 100vh;
 }
 .header {
-  height: 80px;
+  position: sticky;
+  top: 0;
   padding-inline: 20px;
   border-bottom: 1px solid $divider;
+  width: -webkit-fill-available;
+  height: 80px;
+  background: $primary-white;
   a {
     color: $primary-blue;
   }
@@ -103,6 +107,7 @@ footer {
   display: flex;
   align-items: center;
   padding-inline: 20px;
+  width: -webkit-fill-available;
   min-height: 82px;
   background: $primary-blue;
   .container {
@@ -112,6 +117,7 @@ footer {
     margin: inherit;
   }
   p {
+    margin: 0 !important;
     color: $primary-white;
     @include label();
   }

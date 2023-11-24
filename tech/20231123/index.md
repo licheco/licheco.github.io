@@ -3,8 +3,8 @@ layout: default
 type: tech
 date: 2023-11-23
 category: story
-title: 네 바로 이곳이 타이틀이 될 공간입니다만3
-subtitle: 네 바로 이곳은 서브 타이틀의 공간입니다 기이이이이일게 써도 되지요 근데 굳이 길게 쓸 필요가 있을까여?
+title: HTTP 프로토콜
+subtitle: HTTP(Hypertext Transfer Protocol)는 웹을 개발하는 사람이라면 누구나 다 알아야 하는 통신 프로토콜
 member: 815
 post-header: true
 header-img: /assets/img/liche.png
