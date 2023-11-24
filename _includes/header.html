@@ -2,6 +2,8 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+    {% assign tech_culture_page = site.pages | where: 'category', 'culture' %}
+    {% assign tech_post = site.pages | where: 'type', 'tech' %}
 
     {%- if titles_size > 0 -%}
     <div class="container">
@@ -10,8 +12,8 @@
       </a>
       <nav>
         <ul class="list-container">
-          <li><a href="{{ '/culture' | prepend: site.baseurl }}/" >팀 문화</a></li>
-          <li>개발</li>
+          <li><a href="{{ tech_culture_page.first.url }}" >팀 문화</a></li>
+          <li><a href="/tech" >개발</a></li>
           <li class="recruitment">채용</li>
         </ul>
       </div>

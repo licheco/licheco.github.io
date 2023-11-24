@@ -3,13 +3,7 @@
     <div class="card-info transition">
       <h3 class="card-title">{{ page.title }}</h3>
       <p class="card-sub">{{ page.subtitle }}</p>
-      <p class="card-date">
-        {{ page.date }}
-        <span>
-          {% assign writer = site.data.members | where: 'key', page.writer |
-          first %} {% if writer %} {{ writer.name }} {% endif %}
-        </span>
-      </p>
+      <p class="card-date">{{ page.date }}</p>
     </div>
     <div class="img-wrap">
       {% assign writer = site.data.members | where: 'key', page.writer | first

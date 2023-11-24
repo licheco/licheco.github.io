@@ -128,6 +128,7 @@ ol {
   margin: 24px 0px 8px;
 }
 .md-img {
-  width: 100%;
+  width: 30%;
+  border-radius: 8px;
   object-fit: contain;
 }

@@ -1,8 +1,8 @@
 ---
-layout: base
+layout: default
 type: tech
 date: yyyy-mm-dd
-category: story
+category: story | app | api | CI/CD | 기획 | Error....등
 title:
 subtitle:
 writer: 1215
