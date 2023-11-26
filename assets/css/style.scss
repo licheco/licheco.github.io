@@ -84,9 +84,15 @@
     }
   }
 }
-.culture {
-  img {
-    width: 100%;
+.recruit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  h3 {
+    @include headline-1();
+    color: $primary-blue;
   }
 }
 
