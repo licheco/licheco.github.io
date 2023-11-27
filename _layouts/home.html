@@ -7,8 +7,13 @@ layout: default
     <div class="main-card">
       <ul>
         {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type',
-        'tech' %} {% for page in sorted %} {% include post-card.html %} {%
-        endfor %}
+        'tech' %} {% if sorted.size > 0 %} {% for page in sorted %} {% include
+        post-card.html %} {% endfor %} {% else %}
+        <li class="empty-posts-message">
+          😢
+          <p>아직 작성된 글이 없어요!</p>
+        </li>
+        {% endif %}
       </ul>
     </div>
   </div>

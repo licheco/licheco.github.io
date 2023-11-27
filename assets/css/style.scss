@@ -13,6 +13,19 @@
   ul {
     padding-inline: 20px;
     list-style: none;
+    .empty-posts-message {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      font-size: 48px;
+      p {
+        margin: 0 !important;
+        @include title-1(bold);
+        color: $primary-blue;
+      }
+    }
     .card {
       padding-block: 20px;
       min-height: 140px;
@@ -100,6 +113,10 @@
   .main-card {
     ul {
       padding-inline: 0;
+      .empty-posts-message {
+        height: auto;
+        padding-top: 10%;
+      }
       .card {
         margin: 0;
         padding: 50px 0;
