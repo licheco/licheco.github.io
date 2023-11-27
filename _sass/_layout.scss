@@ -96,6 +96,7 @@
       }
       li {
         padding: 4px 4px;
+        width: auto;
         color: $primary-blue;
         @include title-xs(bold);
         cursor: pointer;
