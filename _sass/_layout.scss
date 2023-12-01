@@ -3,7 +3,6 @@
 @import "variables";
 
 .main {
-  flex: 1 0;
   padding-inline: 20px;
   padding-bottom: 50px;
   p {
@@ -28,11 +27,8 @@
   gap: 8px;
 }
 .layout-container {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  flex: 1;
   width: 100%;
-  min-height: 100vh;
 }
 .header {
   position: sticky;

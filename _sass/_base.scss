@@ -100,7 +100,12 @@ section {
 }
 body {
   position: relative;
-  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  height: 100%;
 }
 p {
   letter-spacing: 0em;
