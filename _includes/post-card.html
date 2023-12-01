@@ -5,7 +5,7 @@
     <div class="card-info transition">
       <h3 class="card-title">{{ page.title }}</h3>
       <p class="card-sub">{{ page.subtitle }}</p>
-      <p class="card-date">{{ page.date }}</p>
+      <p class="card-date">{{ page.date | date: "%Y-%m-%d" }}</p>
     </div>
     <div class="img-wrap">
       {% if member %}

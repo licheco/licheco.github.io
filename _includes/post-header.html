@@ -14,7 +14,7 @@
           {% assign member = site.data.members | where: 'key', page.member |
           first %} {% if member %} {{ member.name }} {% endif %}
         </span>
-        {{ page.date }}
+        {{ page.date | date: "%Y-%m-%d" }}
       </p>
     </div>
   </div>
