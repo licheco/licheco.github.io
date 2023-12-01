@@ -6,7 +6,7 @@ layout: default
   <div class="container">
     <div class="main-card">
       <ul>
-        {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type',
+        {% assign sorted = site.posts | sort: 'date' | reverse | where: 'type',
         'tech' %} {% if sorted.size > 0 %} {% for page in sorted %} {% include
         post-card.html %} {% endfor %} {% else %}
         <li class="empty-posts-message">
