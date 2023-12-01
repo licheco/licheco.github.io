@@ -3,14 +3,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- HTML Meta Tags -->
-  <title>
-    {% if page.home == true %}{{ site.title }}{% elsif page.main == true %}{{
-    page.title }} | {{ site.title }}{% else %}{{ page.title }}{% endif %}
-  </title>
-  <meta
-    name="description"
-    content="{% if page.home == true %}{{ site.description }}{% else %}{{ site.title }}{% endif %}"
-  />
+<title>{% if page.home == true %}{{ site.title }}{% elsif page.main == true %}{{ page.title }} | {{ site.title }}{% else %}{{ page.title }}{% endif %}</title>
+<meta name="description" content="{% if page.home == true %}{{ site.description }}{% else %}{{ site.title }}{% endif %}">
 
   <!-- Google / Search Engine Tags -->
   <meta
@@ -26,5 +20,5 @@
 
   <link rel="stylesheet" href="{{ "/assets/css/syntax.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-  <link rel="shortcut icon" href="/meta/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/img/favicon.svg" type="image/x-icon" />
 </head>

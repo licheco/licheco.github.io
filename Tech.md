@@ -1,5 +1,5 @@
 ---
 layout: tech-posts
-title: Tech
-permalink: /tech/
+title: 기술 블로그
+permalink: /posts/tech/
 ---
